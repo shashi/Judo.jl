@@ -231,6 +231,6 @@ end
 
 # Turn a section name into an html id.
 function section_id(section::String)
-    lowercase(replace(section, r"\s+", "-"))
+    lowercase(replace(section, r"[\s\/\?]+", "-"))
 end
 
